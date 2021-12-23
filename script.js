@@ -57,7 +57,7 @@ function drawLine(x1, y1, x2, y2) {
 }
 
 
-function updateSieOnScreen() {
+function updateSizeOnScreen() {
     sizeEl.innerText = size;
 }
 
@@ -68,7 +68,7 @@ increaseBtn.addEventListener('click', () => {
         size = 20;
     }
 
-    updateSieOnScreen();
+    updateSizeOnScreen();
 });
 
 decreaseBtn.addEventListener('click', () => {
@@ -78,7 +78,7 @@ decreaseBtn.addEventListener('click', () => {
         size = 0;
     }
 
-    updateSieOnScreen();
+    updateSizeOnScreen();
 });
 
 colorEl.addEventListener('change', e => color = e.target.value);
